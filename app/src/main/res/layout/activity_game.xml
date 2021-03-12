@@ -6,56 +6,186 @@
     android:layout_height="match_parent"
     tools:context=".GameActivity">
 
-    <TextView
-        android:id="@+id/textViewTimeValue"
-        android:layout_width="81dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toStartOf="@+id/scoreTW"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textViewTime"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/scoreTW"
-        android:layout_width="53dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="32dp"
-        android:text="Score"
-        app:layout_constraintEnd_toStartOf="@+id/scoreValueTW"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textViewTimeValue"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewTime"
-        android:layout_width="112dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="32dp"
-        android:text="Time"
-        android:textAlignment="center"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/textViewTimeValue"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/scoreValueTW"
-        android:layout_width="43dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="32dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@drawable/gradientoolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/scoreTW"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_square"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_football"
+            app:layout_constraintEnd_toStartOf="@+id/scoreValueTW"
+            app:layout_constraintHorizontal_bias="0.603"
+            app:layout_constraintStart_toEndOf="@+id/textViewTimeValue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTimeValue"
+            android:layout_width="81dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="32dp"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoreValueTW"
+            android:layout_width="43dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/hole4"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.453"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole2"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.287"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole8"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole0"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.287"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole1"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.287"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole5"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.453"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole7"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole6"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/hole3"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.438"
+        app:srcCompat="@drawable/hole" />
 
     <ImageView
         android:id="@+id/imageToSmash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="312dp" />
+        android:layout_width="41dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="268dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarLayout"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/ic_mole" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
